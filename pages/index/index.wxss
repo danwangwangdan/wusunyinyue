@@ -14,6 +14,10 @@
   position: absolute;
   left: 50%;
   top: 0;
-  background-image: url(http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/dcc451da81cb39dbe1e7d22bd3160924ab1830a3.jpg);
   transform: translate(-50%, -50%);
+}
+.image {
+  width: 400rpx;
+  height: 600rpx;
+  margin-left: 85rpx;
 }

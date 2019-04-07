@@ -8,7 +8,8 @@
     "wux-button": "../../plugins/wux/button/index",
     "wux-icon": "../../plugins/wux/icon/index",
     "wux-tag": "../../plugins/wux/tag/index",
-    "wux-alert": "../../plugins/wux/alert/index"
+    "wux-alert": "../../plugins/wux/alert/index",
+    "wux-fab-button": "../../plugins/wux/fab-button/index"
   },
   "navigationBarTitleText": "无损音乐下载器"
 }

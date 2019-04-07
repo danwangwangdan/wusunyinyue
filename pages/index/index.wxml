@@ -1,22 +1,28 @@
 <!--index.wxml-->
+<wux-fab-button position="{{ types[typeIndex] }}" theme="{{ colors[colorIndex] }}" direction="vertical" reverse="{{ reverse }}" spaceBetween="{{ spaceBetween }}" sAngle="{{ sAngle }}" eAngle="{{ eAngle }}" buttons="{{ buttons }}" bind:change="onChange" bind:click="onClick" bind:contact="onContact" bind:getuserinfo="onGotUserInfo" />
 <view class="container">
 
   <image style='margin-top:10rpx;height:180rpx;width:180rpx' src="../../res/music.png"></image>
   <text style='color: #d81e06;font-family:consoles'>MusicTools</text>
   <wux-tag color="#33CD5F">全能无损音乐下载</wux-tag>
   <view style='margin-top:50rpx'>
-    <wux-alert theme="dark" title="MusicTools网页版:" label="http://tool.yijingying.com/musictools" />
+    <wux-alert bind:click="showPic" theme="dark" title="MusicTools网页版:" label="http://tool.yijingying.com/musictools" />
     <wux-white-space />
     <view style='margin-top:50rpx'>
       <wux-button block size="default" bind:click="copy" type="balanced">
         <wux-icon type="md-copy" size="16" /> 复制网址链接</wux-button>
       <wux-button block size="default" bind:click="download" type="balanced">
         <wux-icon type="md-download" size="16" /> Windows版本</wux-button>
-      
+
     </view>
 
   </view>
-
+  <modal title="操作提示" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    <view>
+      <image bindtap='previewImg' class="image" src="https://www.daliandaxue.cn/img/tips.png" mode=''></image>
+    </view>
+    <view>复制网址链接，在浏览器中打开。IOS系统由于系统原因，可能无法下载，请下载windows版本操作。</view>
+  </modal>
   <!-- <view class="footer">
     <wux-alert closable theme="assertive" label="由于版权原因，无法在小程序中下载音乐，请复制链接到浏览器中打开，或者下载Windows版本" />
   </view> -->
