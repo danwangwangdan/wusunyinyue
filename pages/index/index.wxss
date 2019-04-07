@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.centerView {
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-image: url(http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/dcc451da81cb39dbe1e7d22bd3160924ab1830a3.jpg);
+  transform: translate(-50%, -50%);
+}
