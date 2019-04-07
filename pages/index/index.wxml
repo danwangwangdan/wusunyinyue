@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<wux-fab-button position="{{ types[typeIndex] }}" theme="{{ colors[colorIndex] }}" direction="vertical" reverse="{{ reverse }}" spaceBetween="{{ spaceBetween }}" sAngle="{{ sAngle }}" eAngle="{{ eAngle }}" buttons="{{ buttons }}" bind:change="onChange" bind:click="onClick" bind:contact="onContact" bind:getuserinfo="onGotUserInfo" />
-<view class="container">
+
+<view  class="container">
 
   <image style='margin-top:10rpx;height:180rpx;width:180rpx' src="../../res/music.png"></image>
   <text style='color: #d81e06;font-family:consoles'>MusicTools</text>
@@ -26,4 +26,5 @@
   <!-- <view class="footer">
     <wux-alert closable theme="assertive" label="由于版权原因，无法在小程序中下载音乐，请复制链接到浏览器中打开，或者下载Windows版本" />
   </view> -->
+  <!-- <wux-fab-button position="{{ types[typeIndex] }}" theme="{{ colors[colorIndex] }}" direction="vertical" reverse="{{ reverse }}" spaceBetween="{{ spaceBetween }}" sAngle="{{ sAngle }}" eAngle="{{ eAngle }}" buttons="{{ buttons }}" bind:change="onChange" bind:click="onClick" bind:contact="onContact" bind:getuserinfo="onGotUserInfo" /> -->
 </view>

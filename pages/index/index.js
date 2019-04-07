@@ -20,6 +20,7 @@ Page({
     eAngle: 360,
     spaceBetween: 10,
     buttons,
+    height: '',
     modalHidden: true,
     imgArr: ['https://www.daliandaxue.cn/img/tips.png', 'https://www.daliandaxue.cn/img/tips2.png'],
     url: 'http://tool.yijingying.com/musictools',
@@ -95,6 +96,13 @@ Page({
     });
   },
   onLoad: function() {
+    var windowWidth = wx.getSystemInfoSync().windowWidth;
+    var windowHeight = wx.getSystemInfoSync().windowHeight;
+    //rpx与px单位之间的换算 : 750/windowWidth = 屏幕的高度（rpx）/windowHeight
+    var scroll_height = 750 * windowHeight / windowWidth;
+    this.setData({
+      height: scroll_height
+    })  
     wx.showModal({
       title: '',
       content: '由于版权原因，无法在小程序中下载音乐，请复制链接到浏览器中打开，或者下载Windows版本',
