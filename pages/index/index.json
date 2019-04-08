@@ -11,5 +11,11 @@
     "wux-alert": "../../plugins/wux/alert/index",
     "wux-fab-button": "../../plugins/wux/fab-button/index"
   },
+  "window": {
+    "navigationBarBackgroundColor": "#182460",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
   "navigationBarTitleText": "无损音乐下载器"
 }

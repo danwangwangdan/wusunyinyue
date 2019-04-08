@@ -3,7 +3,7 @@
 <view  class="container">
 
   <image style='margin-top:10rpx;height:180rpx;width:180rpx' src="../../res/music.png"></image>
-  <text style='color: #d81e06;font-family:consoles'>MusicTools</text>
+  <text style='color: #d81e06;font-size:22px'>MusicTools</text>
   <wux-tag color="#33CD5F">全能无损音乐下载</wux-tag>
   <view style='margin-top:50rpx'>
     <wux-alert bind:click="showPic" theme="dark" title="MusicTools网页版:" label="http://tool.yijingying.com/musictools" />
